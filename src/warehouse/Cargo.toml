@@ -1,0 +1,14 @@
+[package]
+name = "warehouse"
+version = "0.1.0"
+authors = ["msherer <msherer95@gmail.com>"]
+edition = "2018"
+description = "The core data storage and retrieval, including block reads and writes."
+
+
+[dependencies]
+bytes = "0.5"
+bincode = "1.3.1"
+serde = { version = "1.0.114", features = ["derive"] }
+rand = "0.7.3"
+utils = { path = "../utils" }

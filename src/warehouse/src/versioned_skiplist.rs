@@ -524,18 +524,3 @@ impl<'a, K: Ord + Clone, V: Ord + Clone> Iterator for VersionedListIterator<'a, 
         }
     }
 }
-
-#[test]
-fn insert() {
-    /* let list: ConcurrentSkiplist<i32> = ConcurrentSkiplist::new(10);
-    list.insert(10);
-    list.insert(-20);
-    list.insert(20);
-    println!("done"); */
-}
-
-#[test]
-fn uniform() {
-    let uniform = Uniform::new(0, 2);
-    println!("{}", uniform.sample(&mut rand::thread_rng()));
-}
